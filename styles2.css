@@ -1,0 +1,276 @@
+@font-face{
+    font-family: 'fontweb';
+    src: url(font/Ubuntu-Regular.woff);
+    src: url(font/Ubuntu-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'fontweb2';
+    src: url(font/Oswald-SemiBold.woff);
+    src: url(font/Oswald-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: 'fontweb3';
+    src: url(font/Roboto-Light.woff);
+    src: url(font/Roboto-Light.ttf);
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+}
+
+.navigation{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    font-family: fontweb;
+    width: 100%;
+}
+
+.logo{
+    padding-left: 15px;
+    height: 100px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    background-color: #ff3333;
+}
+
+.bag{
+    margin-right: 20px;
+    text-decoration: none;
+    color:red;
+}
+
+.navigation ul{
+    margin-right: 510px;
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    position: relative;
+    font-size: 16px;
+    top: -8px;
+}
+
+.navigation ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.username h6{
+    cursor: pointer;
+    font-family: fontweb;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.navigation ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff3333;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover::after{
+    width: 100%;
+}
+
+.menu-icon{
+    width: 30px;
+    margin-left: 20px;
+    display: none;
+}
+
+.first-section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #111111;
+}
+
+.submittt{
+    cursor: pointer;
+    background: #ff3333;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.submittt:hover{
+    opacity: .8;
+}
+
+form {
+    width: 500px;
+    height: 775px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.firstdiv {
+    margin-left: 25%;
+    margin-top: 4%;
+}
+
+.seconddiv {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.seconddiv img {
+    width: 600px;
+    height: 771px;
+}
+
+footer{
+    background:white;
+    color:black;
+    padding: 20px 20px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom: 10px;
+    margin-left: 7px;
+    color: #ff3333;
+}
+
+p{
+    color: #ff3333;
+    margin-left: 7px;
+}
+
+input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 1px auto;
+    border-radius: 5px;
+}
+
+label {
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.genderr{
+    margin-left: 10px;
+    position: relative;
+    top: -20px;
+    color: #888;
+}
+
+.genderrr{
+    position: relative;
+    top: 20px;
+}
+
+.emailll{
+    position: relative;
+    top: -17px;
+}
+
+@media only screen and (max-width: 1506px){
+
+    .navigation{
+        height: 100px;
+    }
+
+    .navigation ul{
+        text-align: right;
+        position: absolute;
+        background: white;
+        top: 100px;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .navigation ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .menu-icon{
+        width: 45px;
+        height: 30px;
+        display: block;
+        cursor: pointer;
+        padding-right: 15px;
+    }
+
+    .single-product{
+        background-color: rgba(41, 39, 39, 0.822);
+    }
+
+    .row{
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        display: inline;
+    }
+    .col-2{
+        align-items: center;
+        text-align: center;
+        display: inline-block;
+    }
+    footer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .logout{
+        top: 310px;
+    }
+    .logout h6{
+        margin-top: 20;
+    }
+    .defaulth1{
+        margin-top: 0;
+    }
+
+    .second-div-third-section{
+        position: relative;
+        top: -100px;
+    }
+
+    .first-div-third-section{
+        position: relative;
+        top: -100px;
+    }
+}
+
+@media only screen and (max-width: 1045px){
+    .seconddiv{
+        display: none;
+    }
+    form {
+        border-radius: 15px 15px 15px 15px;
+    }
+}

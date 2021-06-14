@@ -1,0 +1,1082 @@
+@font-face{
+    font-family: 'fontweb';
+    src: url(font/Ubuntu-Regular.woff);
+    src: url(font/Ubuntu-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'fontweb2';
+    src: url(font/Oswald-SemiBold.woff);
+    src: url(font/Oswald-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: 'fontweb3';
+    src: url(font/Roboto-Light.woff);
+    src: url(font/Roboto-Light.ttf);
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+}
+
+.navigation{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    font-family: fontweb;
+    width: 100%;
+}
+
+.logo{
+    padding-left: 15px;
+    height: 100px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    background-color: #ff3333;
+}
+
+.bag{
+    margin-right: 20px;
+    text-decoration: none;
+    color:red;
+}
+
+.navigation ul{
+    margin-right: 510px;
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    position: relative;
+    font-size: 16px;
+    top: -8px;
+}
+
+.navigation ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.username h6{
+    cursor: pointer;
+    font-family: fontweb;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.navigation ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff3333;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover::after{
+    width: 100%;
+}
+
+.first-section{
+    position: relative;
+    height:736.31px;
+    padding-top:100px;
+    display: flex;
+    flex-direction:row;
+}
+
+.logout{
+    background-color: white;
+    position: fixed;
+    width: 107%;
+    height: 46px;
+    top: 100px;
+    left: -19px;
+    display: none;
+    cursor: pointer;
+    z-index: 280;
+}
+
+.logout::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff3333;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.logout:hover::after{
+    width: 100%;
+}
+
+.logout h6{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    height: 21px;
+    width: 100%;
+    cursor: pointer;
+    color: black;
+    font-family: fontweb;
+    font-weight: 900;
+}
+
+.first-section .carousel.slide {
+    padding: 0px;
+    margin: 0px;
+    height: 736.31px;
+    width: 100%;
+}
+
+.first-section .carousel-inner {
+    height:736.31px;
+}
+
+.first-section .carousel-item {
+    height: 736.31px;
+}
+
+.first-section .carousel-caption {
+    width: 100%;
+    left: 1px;
+}
+
+.judul {
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+    top: -250px;
+}
+
+.weather {
+    width: 300px;
+    position: relative;
+    margin-left: 1%;
+    top: -460px;
+    height: 30px;
+}
+
+.first-section h1{
+    font-family: fontweb2;
+    font-size: 80px;
+    color: white;
+    text-shadow: -5px 5px black;
+}
+
+.second-div-first-section{
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+.first-section button{
+    background:#ff3333;
+    color:white;
+    border:none;
+    border-radius:10px;
+    width:60px;
+    height:30px;
+    position: relative;
+    font-weight: bolder;
+    font-size: 17px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.third-section{
+    background:#111111;
+    background-image: url("image/dragon-fruit2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-image: url("image/paint-red.png");
+    background-repeat: no-repeat;
+    background-size: 1800px;*/
+    height: 915px;
+    display: flex;
+    flex-direction: row;
+}
+
+.first-div-third-section{
+    width: 700px;
+}
+
+.second-div-third-section{
+    width: 800px;
+}
+
+.third-section .carousel.slide{
+    z-index: 50;
+    padding: 0px;
+    margin:0px;
+    height: 710px;
+    width: 100%;
+}
+
+.third-section .carousel-inner{
+    margin-left: 10%;
+    z-index: 50;
+    top: 80px;
+    height: 700px;
+    width: 100%;
+}
+
+.third-section .carousel-caption{
+    bottom: -20px;
+    z-index: 50;
+    text-shadow: -2px 2px black;
+}
+
+.third-section .judul{
+    margin-top: 48%;
+    margin-left: 40%;
+    width: 700px;
+    top: 0px;
+    text-align: left;
+    z-index: 50;
+}
+
+.third-section .judul h1{
+    z-index: 50;
+    color: #ff3333;
+}
+
+.third-section .judul h2{
+    width: 700px;
+    margin-bottom: 25px;
+    color: whitesmoke;
+    text-shadow: -2px 2px black;
+}
+
+
+
+.third-section .carousel-item{
+    z-index: 50;
+    height: 700px;
+    width: 650px;
+}
+
+.third-section .carousel-item img{
+    z-index: 50;
+    height: 630px;
+    width: 650px;
+}
+
+.carousel-caption h5{
+    position: relative;
+    font-size: 25px;
+}
+
+.jus{
+    margin-left: 70px;
+    z-index: 50;
+}
+
+.manisan{
+    margin-left: -50px;
+    z-index: 50;
+}
+
+.third-section .carousel-control-prev{
+    z-index: 50;
+    margin-left: 12%;
+    top: 410px;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.third-section .carousel-control-next{
+    z-index: 50;
+    margin-right: 48%;
+    right: 15px;
+    top: 400px;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.third-section button{
+    z-index: 50;
+    background:#ff3333;
+    color:white;
+    border:none;
+    border-radius:10px;
+    width:170px;
+    height:50px;
+    position: relative;
+    font-weight: bolder;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.third-section button::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff7f7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.third-section button:hover::after{
+    width: 100%;
+}
+
+.fifth-section {
+    background-image: url("image/background-op.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 982px;
+}
+
+.first-div-fifth-section {
+    width:950px;
+    margin-left: 6%;
+}
+
+.defaulth1{
+    font-family: fontweb3;
+    color: whitesmoke;
+    text-shadow: -2px 2px black;
+    font-size: 40px;
+    margin-top: 330px;
+    margin-left: 50px;
+}
+
+.first-div-fifth-section h2 {
+    font-family: fontweb2;
+    color: #ff3333;
+    font-size: 75px;
+    position: relative;
+    top:-10px;
+    margin-left: 50px;
+}
+
+.second-div-fifth-section {
+    padding-right: 190px;
+}
+
+.second-div-fifth-section .carousel.slide{
+    width: 720px;
+    height: 393.77px;
+}
+
+.second-div-fifth-section .carousel-inner{
+    top: 290px;
+    left: 50px;
+    width: 720px;
+    height: 393.77px;
+}
+
+.second-div-fifth-section .carousel-item{
+    width: 720px;
+    height: 393.77px;
+}
+
+.fifth-section button{
+    margin-left:50px;
+    background:#ff3333;
+    color:white;
+    border:none;
+    border-radius:10px;
+    width:170px;
+    height:50px;
+    position: relative;
+    font-weight: bolder;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.fifth-section button::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff7f7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+.fifth-section button:hover::after{
+    width: 100%;
+  }
+
+.sixth-section{
+    padding-top: 100px;
+    font-family: fontweb2;
+    background: #111111;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-div-sixth-section h1{
+    margin-top : 35px;
+    color: #ff3333;
+    width: 15%;
+    margin-left: 42.5%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.sixth-section h3{
+    font-size: 20px;
+}
+
+.second-div-sixth-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 113px;
+    margin-top: 40px;
+}
+
+.second-div-sixth-section div{
+
+    color : white;
+    margin-top: 60px;
+    width :306px;
+    height : 280px;
+    margin: auto;
+}
+
+
+.second-div-sixth-section div h3{
+    position: relative;
+    top: -73px;
+    left: 5px;
+    height: 72px;
+    width: 300px;
+}
+
+.second-div-sixth-section div button{
+    margin-left:10px;
+    background:#ff3333;
+    color:white;
+    border:none;
+    border-radius:10px;
+    width:170px;
+    height:45px;
+    position: relative;
+    font-weight: bolder;
+    font-size: 17px;
+    top: -60px;
+    cursor: pointer;
+}
+
+.second-div-sixth-section div button::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff7f7;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.second-div-sixth-section div button:hover::after{
+    width: 100%;
+}
+
+.second-div-sixth-section div figure {
+    margin : 0px;
+    width: 300px;
+    height : 200px;
+}
+
+.second-div-sixth-section div figure img {
+    width:300px;
+    height :200px;
+}
+
+footer{
+    background:white;
+    color:black;
+    padding: 20px 20px;
+    text-align:center;
+}
+
+
+
+.container{
+    width: 300px;    
+    background-color:#080808;
+    
+    display: block;
+    margin: 0 auto;
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
+}
+
+.app-title{
+    margin: 0px;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: white;
+    position: relative;
+    left:-15px;
+    cursor: default;
+}
+
+.weather-container{
+    position: relative;
+    left:10px;
+    width: 250px;
+    height: 260px;
+    background-color: #ff3333;
+    border-radius: 10px;
+}
+
+.weather-icon{
+    padding-top: 25px;
+    width: 245px;
+    height: 128px;
+    position: relative;
+    left:2.5px;
+    font-size: 1.3em;
+    color: #FFDF00;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left:-10px;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+    position: relative;
+    left:-10px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    position: relative;
+    left:-15px;
+    cursor: default;
+}
+
+.temperature-value span{
+    color: white;
+    font-size: 0.5em;
+    
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: default;
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    cursor: default;
+}
+
+.quote p{
+    position: relative;
+    top: 35px;
+    cursor: default;
+}
+
+.hideh1{
+    display: none;
+    font-family: fontweb3;
+    color: whitesmoke;
+    font-size: 40px;
+    margin-top: 330px;
+    margin-left: 50px;
+    text-shadow: -2px 2px black;
+}
+
+.menu-icon{
+    width: 30px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* Responsive rules */
+
+@media screen and (max-width: 1700px){
+    .third-section .judul{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1545px){
+    .third-section .judul{
+        width: 500px;
+    }
+
+    .third-section .judul h2{
+        width: 500px;
+    }
+    .second-div-third-section{
+        width: 500px;
+    }
+    .second-div-third-section .carousel-inner{
+        width: 500px;
+    }
+    .second-div-third-section .carousel-item{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1506px){
+
+    .navigation{
+        height: 100px;
+    }
+
+    .navigation ul{
+        text-align: right;
+        position: absolute;
+        background: white;
+        top: 100px;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .navigation ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .menu-icon{
+        width: 45px;
+        height: 30px;
+        display: block;
+        cursor: pointer;
+        padding-right: 15px;
+    }
+
+    .single-product{
+        background-color: rgba(41, 39, 39, 0.822);
+    }
+
+    section{
+        align-items: center;
+        text-align: center;
+    }
+    .row{
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        display: inline;
+    }
+    .col-2{
+        align-items: center;
+        text-align: center;
+        display: inline-block;
+    }
+    footer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .logout{
+        top: 310px;
+    }
+    .logout h6{
+        margin-top: 20;
+    }
+    .defaulth1{
+        margin-top: 0;
+    }
+
+    .second-div-fifth-section .carousel-inner{
+        top: 0;
+    }
+    .second-div-third-section{
+        position: relative;
+        top: -100px;
+    }
+
+    .first-div-third-section{
+        position: relative;
+        top: -100px;
+    }
+}
+
+@media screen and (max-width: 1324px) {
+    .first-section{
+        height: 600px;
+    }
+
+    .first-section .carousel.slide{
+        height: 600px;
+    }
+
+    .first-section .carousel-inner{
+        height: 600px;
+    }
+
+    .judul{
+        top: -175px;
+    }
+
+    .weather{
+        top: -325px;
+    }
+
+    .third-section .judul{
+        width: 400px;
+    }
+
+    .third-section .judul h2{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1258px) {
+    .second-div-fifth-section .carousel-inner{
+        width: 550px;
+    }
+    .second-div-fifth-section .carousel-item{
+        width: 550px;
+    }
+    .second-div-fifth-section{
+        padding-right: 0px;
+    }
+    .first-div-fifth-section h1{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1128px) {
+
+    .first-div-fifth-section h1{
+        margin-top: 0px;
+    }
+}
+
+
+@media screen and (max-width: 1089px) {
+    .container{
+        display: none;
+    }
+    .first-section{
+        position: relative;
+        bottom: 0px;
+    }
+    .sixth-section{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1082px) {
+    .first-section{
+        height: 600px;
+    }
+
+    .first-section .carousel.slide{
+        height: 600px;
+    }
+
+    .first-section .carousel-inner{
+        height: 600px;
+    }
+    
+    .first-section .carousel-item{
+        width: 1300px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1055px) {
+
+    .first-div-fifth-section h1{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .fifth-section{
+        flex-direction: column-reverse;
+    }
+    .second-div-fifth-section .carousel-inner{
+        top: -110px;
+        margin-left: 5%;
+    }
+    .first-div-fifth-section{
+        position: relative;
+        top: -170px;
+        left: -50px;
+    }
+    .first-div-fifth-section h1{
+        margin-top: 50px;
+    }
+
+    .third-section{
+        flex-direction: column;
+    }
+
+    .second-div-third-section .carousel-inner{
+        position: relative;
+        top: 170px;
+        height :450px;
+    }
+
+    .second-div-third-section .carousel-item{
+        height: 450px;
+    }
+
+    .second-div-third-section .carousel-item img{
+        height: 450px;
+    }
+
+    .first-div-third-section .judul{
+        margin-top: 0;
+        position: relative;
+        top: -60px;
+    }
+
+    .third-section .judul{
+        width: 600px;
+    }
+
+    .third-section .judul h2{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 887px) {
+    .third-section{
+        background-position-x: -630px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .third-section .judul{
+        width: 500px;
+    }
+
+    .third-section .judul h2{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .first-section{
+        height: 500px;
+    }
+
+    .first-section .carousel.slide{
+        height: 500px;
+    }
+
+    .first-section .carousel-inner{
+        height: 500px;
+    }
+    
+    .first-section .carousel-item img{
+        width: 399px;
+        height: 500px;
+    }
+
+    .judul{
+        top: -140px;
+        margin-left: 5%;
+    }
+
+    .judul h1{
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .hideh1{
+        display: inline-block;
+    }
+
+    .defaulth1{
+        display: none;
+    }
+
+    .second-div-fifth-section .carousel-inner{
+
+        height: 312.77px;
+    }
+
+    .second-div-fifth-section .carousel-item img{
+
+        height: 312.77px;
+    }
+
+
+}
+
+@media screen and (max-width: 644px) {
+    .fifth-section{
+        height: 800px;
+    }
+
+    .second-div-fifth-section .carousel-inner{
+        margin-left: 20%;
+        width: 320px;
+        height: 200px;
+        top: 70px;
+    }
+
+    .second-div-fifth-section .carousel-item{
+        width: 320px;
+        height: 200px;
+        
+    }
+
+    .first-div-fifth-section{
+        margin-left: 14%;
+    }
+
+    .hideh1{
+        display: inline-block;
+        margin-left: 0px;
+        font-size: 32px;
+    }
+
+    .first-div-fifth-section h2{
+        margin-left: 0px;
+    }
+
+    .first-div-fifth-section button{
+        margin-left: 0px;
+    }
+
+    
+
+    .second-div-third-section .carousel-inner{
+        height: 400px;
+        width: 520px;
+        margin-left: 0;
+    }
+
+    .second-div-third-section .carousel-item img{
+        left: 15px;
+        height: 400px;
+        width: 520px;
+        position: relative;
+    }
+
+    .first-div-third-section .judul{
+        margin-left: 28%;
+        top: -140px;
+        width: 300px;
+    }
+
+    .first-div-third-section .judul h2{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 579px) {
+    .judul{
+        top: -110px;
+        margin-left: 5%;
+    }
+
+    .judul h1{
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .third-section{
+        background-position-x: -830px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .first-div-sixth-section h1{
+        margin-left: 35%;
+    }
+
+    .first-section .carousel-item{
+        position: relative;
+        left: -140px;
+        width: 1300px;
+    }
+
+    .first-div-fifth-section{
+        margin-left: 30%;
+    }
+
+    .second-div-fifth-section .carousel-inner{
+        margin-left: 21%;
+    }
+}
+
+@media screen and (max-width: 366px) {
+    .second-div-third-section .carousel-inner{
+        top: 130px;
+        height: 400px;
+        width: 520px;
+
+    }
+
+    .second-div-third-section .carousel-item img{
+        height: 400px;
+        width: 520px;
+        position: relative;
+    }
+
+    .first-div-third-section .judul{
+        margin-left: 31%;
+        top: -170px;
+        width: 300px;
+    }
+
+    .first-div-third-section .judul h2{
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .second-div-third-section .carousel-item img{
+        height: 400px;
+        width: 520px;
+        position: relative;
+    }
+}

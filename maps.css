@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    box-sizing:
+    border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+}
+
+@font-face{
+    font-family: 'fontweb';
+    src: url(font/Ubuntu-Regular.woff);
+    src: url(font/Ubuntu-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'fontweb2';
+    src: url(font/Oswald-SemiBold.woff);
+    src: url(font/Oswald-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: 'fontweb3';
+    src: url(font/Roboto-Light.woff);
+    src: url(font/Roboto-Light.ttf);
+}
+
+
+body {
+    margin:0px;
+    padding:0px;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.navigation{
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  font-family: fontweb;
+}
+
+.navigation ul{
+  margin-right: 510px;
+}
+
+.logo{
+  padding-left: 15px;
+  height: 100px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+  background-color: #ff3333;
+}
+
+.bag{
+  margin-right: 20px;
+  text-decoration: none;
+  color:red;
+}
+
+.navigation ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 70px;
+  position: relative;
+  font-size: 16px;
+  top: -8px;
+}
+
+.navigation ul li a{
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.navigation ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #ff3333;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navigation ul li:hover::after{
+  width: 100%;
+}
+
+.username h6{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-family: fontweb;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+section{
+    margin-bottom: 58px;
+    position: relative;
+}
+
+.logout{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    top: 100px;
+    left: 0px;
+    display: none;
+    cursor: pointer;
+    z-index: 280;
+}
+
+.logout::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff3333;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.logout:hover::after{
+    width: 100%;
+}
+
+.logout h6{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    height: 21px;
+    width: 100%;
+    cursor: pointer;
+    color: black;
+    font-family: fontweb;
+    font-weight: 900;
+    text-align: center;
+}
+
+.menu-icon{
+    width: 30px;
+    margin-left: 20px;
+    display: none;
+}
+
+p{
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 1500px){
+
+    /* .logo{
+        width: 200px;
+    } */
+
+    .bag{
+        position: absolute;
+        right: 50px;
+    }
+
+    .navigation ul{
+        text-align: right;
+        position: absolute;
+        background: white;
+        top: 100px;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .navigation ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding-right: 15px;
+        width: 45px;
+    }
+    footer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .logout{
+        top: 285px;
+    }
+    .logout h6{
+        margin-top: 20;
+    }
+    .defaulth1{
+        margin-top: 0;
+    }
+}

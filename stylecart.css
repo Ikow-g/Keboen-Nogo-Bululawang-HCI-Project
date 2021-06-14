@@ -1,0 +1,394 @@
+@font-face{
+    font-family: 'fontweb';
+    src: url(font/Ubuntu-Regular.woff);
+    src: url(font/Ubuntu-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'fontweb2';
+    src: url(font/Oswald-SemiBold.woff);
+    src: url(font/Oswald-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: 'fontweb3';
+    src: url(font/Roboto-Light.woff);
+    src: url(font/Roboto-Light.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: fontweb;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.281),rgba(54, 52, 52, 0.253)), url(images/leaf.jpg);
+    background-size: cover;
+}
+
+.navigation{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    font-family: fontweb;
+}
+
+.logo{
+    padding-left: 15px;
+    height: 100px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    background-color: #ff3333;
+}
+
+.bag{
+    margin-right: 20px;
+    text-decoration: none;
+    color:red;
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    position: relative;
+    font-size: 16px;
+   
+}
+
+.navigation ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.navigation ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff3333;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover::after{
+    width: 100%;
+}
+
+.username h6{
+    cursor: pointer;
+    font-family: fontweb;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+section{
+    margin-bottom: 58px;
+    position: relative;
+}
+
+.logout{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 46px;
+    top: 100px;
+    left: 0px;
+    display: none;
+    cursor: pointer;
+    z-index: 280;
+}
+
+.logout::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff3333;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.logout:hover::after{
+    width: 100%;
+}
+
+.logout h6{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    height: 21px;
+    width: 100%;
+    cursor: pointer;
+    color: black;
+    font-family: fontweb;
+    font-weight: 900;
+    text-align: center;
+}
+
+.container{
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* display: flex; */
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    background-color: rgba(41, 39, 39, 0.822);
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    /* display: flex; */
+}
+
+.col-2{
+    width: 50%;
+}
+
+.col-4 img{
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.title{
+    padding-top: 100px;
+    text-align: center;
+    margin: 0 auto 50px;
+    position: relative;
+    line-height: 60px;
+    color: white;
+    z-index: 50;
+    opacity: 0;
+    transition: opacity .5s .25s ease-out
+}
+
+.title.is-visible{
+    opacity: 1;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col-2 h1{
+    color: white;
+}
+
+.col-2 h3{
+    color: white;
+}
+
+h4{
+    color: white;
+    font-weight: normal;
+}
+
+p{
+    color: white;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.rating .fas{
+    color: #ff532b;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.single-product{
+    margin-top: 50px;
+    opacity: 0;
+    transition: opacity .5s .25s ease-out
+}
+
+.single-product.is-visible{
+    opacity: 1;
+}
+
+/* .single-product:hover{
+    transform: translateY(-20px);
+} */
+
+.single-product .col-2 img{
+    padding: 0;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 1px solid #ff523b;
+}
+
+.single-product h3{
+    margin-top: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.btn1{
+    font-size: 20px;
+    color: white;
+    background-color: #ff523b;
+    border-radius: 10px;
+    width:fit-content;
+    height:45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+.rating{
+    margin-top: 10px;
+    margin-left: 16px;
+}
+
+.single-product .fa{
+    color: #ff523b;
+}
+
+.menu-icon{
+    width: 30px;
+    margin-left: 20px;
+    display: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background:white;
+    color:black;
+    padding: 20px 20px;
+    text-align:center;
+}
+
+
+
+/* media query menu */
+
+@media only screen and (max-width: 1050px){
+
+    /* .logo{
+        width: 200px;
+    } */
+
+    .bag{
+        position: absolute;
+        right: 50px;
+    }
+
+    .navigation ul{
+        text-align: right;
+        position: absolute;
+        background: white;
+        top: 100px;
+        width: 100%;
+        margin: 0;
+        height: fit-content;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    .navigation ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding-right: 15px;
+        width: 45px;
+    }
+
+    .single-product{
+        background-color: rgba(41, 39, 39, 0.822);
+    }
+
+    section{
+        align-items: center;
+        text-align: center;
+    }
+    .row{
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        display: inline;
+    }
+    .col-2{
+        align-items: center;
+        text-align: center;
+        display: inline-block;
+    }
+    footer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .logout{
+        top: 310px;
+    }
+    .logout h6{
+        margin-top: 20;
+    }
+    .defaulth1{
+        margin-top: 0;
+    }
+}
